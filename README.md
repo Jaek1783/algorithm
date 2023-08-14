@@ -81,7 +81,7 @@ function solution2(num1, num2) {
 }
 ```
 
-### 배열 두배 만들기
+### 4. 배열 두배 만들기
 
 - 문제 설명
   -정수 배열 numbers가 매개변수로 주어집니다. numbers의 각 원소에 두배한 원소를 가진 배열을 return하도록 solution 함수를 완성해주세요.
@@ -95,3 +95,19 @@ function solution2(num1, num2) {
 ---:|---:
 [1, 2, 3, 4, 5] |	[2, 4, 6, 8, 10]
 [1, 2, 100, -99, 1, 2, 3] |	[2, 4, 200, -198, 2, 4, 6]
+
+- 정답
+```javascript
+function solution(numbers) {
+        var answer = [];
+    for(let i=0; i <numbers.length; i++){
+        const number2 = numbers[i]*2;
+        answer.push(number2);
+    }
+    return answer;
+}
+
+//배열 값을 다 구하고,
+//*2를 해서
+//다시 배열에 넣는다
+```
