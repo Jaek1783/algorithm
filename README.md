@@ -128,3 +128,17 @@ function solution(numbers) {
 ---:|---:
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]	| 5.5
 [89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99] | 94.0
+
+- 정답
+``````javascript
+function solution(numbers) {
+    var answer = 0;
+    if (numbers.length === 0) {
+        return 0; // 빈 배열이면 평균값이 0입니다.
+    }
+
+    const sum = numbers.reduce((a, b) => a + b, 0);
+    answer = sum / numbers.length;
+    return answer;
+}
+``````
