@@ -7,6 +7,7 @@
 - 4. 배열 두배 만들기
 - 5. 배열의 평균값
 - 6. 배열 자르기
+- 7. 피자나눠먹기
 
 ### 1. 몫구하기
 - 문제 설명
@@ -159,6 +160,7 @@ function solution(numbers) {
 - 입출력 예
 
 numbers |	num1 | num2 | result
+---:|---:
 [1, 2, 3, 4, 5] |	1 |	3 |	[2, 3, 4]
 [1, 3, 5]	| 1 |	2 |	[3, 5]
 
@@ -179,4 +181,32 @@ function solution(numbers, num1, num2) {
 
     return answer;
 }
+``````
+
+### 7.피자나눠먹기
+
+- 문제 설명
+  - 머쓱이네 피자가게는 피자를 일곱 조각으로 잘라 줍니다. 피자를 나눠먹을 사람의 수 n이 주어질 때, 모든 사람이 피자를 한 조각 이상 먹기 위해 필요한 피자의 수를 return 하는 solution 함수를 완성해보세요.
+
+- 제한사항
+  - 1 ≤ n ≤ 100
+
+- 입출력 예
+
+n	| result
+---:|---:
+7 |	1
+1 |	1
+15 | 3
+
+- 정답
+``````javascript
+
+function solution(n) {
+    var answer = 0;
+    const pizzaSlice = n /7;
+    answer = Math.ceil(pizzaSlice);
+    return answer;
+}
+
 ``````
