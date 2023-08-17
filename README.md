@@ -223,6 +223,7 @@ function solution(n) {
   - 1 ≤ array의 원소 ≤ 200
 
 - 입출력 예
+
 array |	height | result
 ---:|---:|---:
 [149, 180, 192, 170] | 167 | 3
