@@ -270,6 +270,7 @@ function solution(array, height) {
   - dot의 원소는 0이 아닙니다.
 
 - 입출력 예
+
 dot |	result
 ---:---:
 [2, 4] | 1
