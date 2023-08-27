@@ -271,8 +271,8 @@ function solution(array, height) {
 
 - 입출력 예
 
-dot |	result
----:---:
+dot |	result 
+---:---: 
 [2, 4] | 1
 [-7, 9]	| 2
 
