@@ -299,9 +299,9 @@ function solution(dot) {
 
 - 입출력 예
 
-dot |	result 
----:|---:|---: 
-my_string	| n | result
+
+my_string	| n | result 
+---:|---:|---:
 "hello" | 3 | "hhheeellllllooo"
 
 - 정답
