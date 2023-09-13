@@ -11,6 +11,7 @@
 - 8. 머쓱이 보다 큰 사람
 - 9. 점 위치 구하기
 - 10. 문자 반복 출력하기
+- 11. 중복 된 숫자 개수
 
 ### 1. 몫구하기
 - 문제 설명
@@ -310,5 +311,30 @@ function solution(my_string, n) {
     var answer = [...my_string].map(v => v.repeat(n)).join("");
     console.log(answer);
     return answer;
+}
+```
+
+### 11. 중복된 숫자 개수
+
+- 문제 설명
+  - 정수가 담긴 배열 array와 정수 n이 매개변수로 주어질 때, array에 n이 몇 개 있는 지를 return 하도록 solution 함수를 완성해보세요.
+
+- 제한사항
+  - 1 ≤ array의 길이 ≤ 100
+  - 0 ≤ array의 원소 ≤ 1,000
+  - 0 ≤ n ≤ 1,000
+
+- 입출력 예
+
+array |	n	| result
+---:|---:|---:
+[1, 1, 2, 3, 4, 5] | 1 | 2
+[0, 2, 3, 4] | 1	| 0
+
+- 정답
+```javascript
+function solution(array, n) {
+    var answer = 0;
+    return array.filter(v=>v===n).length;
 }
 ```
