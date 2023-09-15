@@ -12,6 +12,7 @@
 - 9. 점 위치 구하기
 - 10. 문자 반복 출력하기
 - 11. 중복 된 숫자 개수
+- 12. 문자열 안에 문자열
 
 ### 1. 몫구하기
 - 문제 설명
@@ -336,5 +337,29 @@ array |	n	| result
 function solution(array, n) {
     var answer = 0;
     return array.filter(v=>v===n).length;
+}
+```
+### 12. 문자열 안에 문자열
+
+- 문제 설명
+  - 문자열 str1, str2가 매개변수로 주어집니다. str1 안에 str2가 있다면 1을 없다면 2를 return하도록 solution 함수를 완성해주세요.
+
+- 제한사항
+  - 1 ≤ str1의 길이 ≤ 100
+  - 1 ≤ str2의 길이 ≤ 100
+  - 문자열은 알파벳 대문자, 소문자, 숫자로 구성되어 있습니다.
+
+- 입출력 예
+
+str1 | str2 | result
+---:|---:|---:
+"ab6CDE443fgh22iJKlmn1o" | "6CD" |	1
+"ppprrrogrammers" |	"pppp" | 2
+"AbcAbcA" |	"AAA" |	2
+
+- 정답
+```javascript
+function solution(str1, str2) {
+    return str1.indexOf(str2) === -1 ? 2 : 1;
 }
 ```
